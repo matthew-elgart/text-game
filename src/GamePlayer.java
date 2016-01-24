@@ -35,7 +35,7 @@ public class GamePlayer {
 		String command = in[0].toLowerCase();
 		List<String> charNames = extractNames(protagonist.getCharacteristics());
 		
-		if (command.equals("inspect")) {
+		if (command.equals("look")) {
 			for (Item i : currentLevel.getItems()) {
 				if (i.getName().toLowerCase().equals(in[1].toLowerCase())) {
 					pl(i.getDescription(charNames));
